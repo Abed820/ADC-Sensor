@@ -1,0 +1,12 @@
+adc_sensor_processor.exe
+adc_sensor_log.bin
+*.pdf
+*.docx
+*.zip
+cmake-build-debug/
+build/
+*.ps1
+*.py
+*.mmd
+*.png
+logbook_fixes.md
