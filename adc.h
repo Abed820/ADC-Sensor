@@ -10,7 +10,7 @@
 #define UNDERVOLTAGE_LIMIT 0.3
 
 // Ensure structs match exact binary layout
-
+#pragma pack(push, 1)
 
 // File header (24 bytes)
 typedef struct {
@@ -33,7 +33,7 @@ typedef struct {
     uint8_t  reserved[2];     
 } RawRecord;
 
-
+#pragma pack(pop)
 
 // In-memory record with computed voltage
 typedef struct {
