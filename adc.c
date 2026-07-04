@@ -54,7 +54,7 @@ void compute_channel_stats(const ADCSample *records, uint32_t count, ChannelStat
         
         for (uint32_t i = 0; i < count; i++) {
             if ((int)p->channel_id == ch) {
-                double v = convert_voltage(p->raw_value);
+                double v = p->voltage;
                 *vp = v;
                 vp++;
 

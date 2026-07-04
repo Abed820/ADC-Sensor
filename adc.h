@@ -40,7 +40,7 @@ typedef struct {
     float    timestamp;       
     uint8_t  channel_id;      
     uint16_t raw_value;
-    
+    double   voltage;
     int16_t  temperature;     
     uint8_t  status_flags;    
     uint32_t sequence_number; 

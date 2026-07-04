@@ -55,7 +55,7 @@ ADCSample *read_binary_file(const char *filename, FileHeader *out_header)
         records[i].timestamp = raw_records[i].timestamp;
         records[i].channel_id = raw_records[i].channel_id;
         records[i].raw_value = raw_records[i].raw_value;
-        
+        records[i].voltage = convert_voltage(raw_records[i].raw_value);
         records[i].temperature = raw_records[i].temperature;
         records[i].status_flags = raw_records[i].status_flags;
         records[i].sequence_number = raw_records[i].sequence_number;
