@@ -1,0 +1,73 @@
+================================================================================
+  ADC SENSOR LOG ANALYSIS REPORT
+  Generated on: 2026-07-09 06:22:46
+================================================================================
+
+FILE INFORMATION
+--------------------------------------------------------------------------------
+  Magic number   : 0xADC1BEEF
+  File version   : 1
+  Channel count  : 4
+  Record count   : 4000
+  Sample rate    : 1000 Hz
+
+PER-CHANNEL VOLTAGE STATISTICS
+--------------------------------------------------------------------------------
+
+  CH0 - 5 Hz sine, centred 1.65 V, clean reference
+  Samples     : 1000
+  Mean        :  1.649628 V
+  RMS         :  1.855012 V
+  Minimum     :  0.438388 V
+  Maximum     :  2.858388 V
+  Std Dev     :  0.848408 V
+
+  CH1 - 3 Hz sine, centred 1.50 V, overvoltage spikes
+  Samples     : 1000
+  Mean        :  1.505853 V
+  RMS         :  1.667759 V
+  Minimum     :  0.489158 V
+  Maximum     :  3.198462 V
+  Std Dev     :  0.716817 V
+
+  CH2 - 7 Hz sine, centred 1.80 V, undervoltage drops
+  Samples     : 1000
+  Mean        :  1.786128 V
+  RMS         :  1.952571 V
+  Minimum     :  0.104762 V
+  Maximum     :  2.907546 V
+  Std Dev     :  0.788847 V
+
+  CH3 - 2 Hz sine, centred 1.40 V, fault flags
+  Samples     : 1000
+  Mean        :  1.399686 V
+  RMS         :  1.537561 V
+  Minimum     :  0.485128 V
+  Maximum     :  2.312821 V
+  Std Dev     :  0.636375 V
+
+
+FAULT DETECTION SUMMARY
+--------------------------------------------------------------------------------
+  Chan    Overvoltage     Undervoltage    Sensor Fault    OOR       
+  ------  --------------  --------------  --------------  ----------
+  CH0     0               0               0               0         
+  CH1     6               0               0               0         
+  CH2     0               7               0               0         
+  CH3     0               0               7               2         
+  ------  --------------  --------------  --------------  ----------
+  TOTAL   6               7               7               2         
+
+
+SEQUENCE INTEGRITY CHECK
+--------------------------------------------------------------------------------
+  Found 2 sequence gap(s):
+
+  Gap#    Expected Seq    Found Seq       Missing       At Time(s)  
+  ----    ------------    ---------       -------       ---------   
+  1       799             801             2             0.1990
+  2       2498            2500            2             0.6240
+
+================================================================================
+  END OF REPORT
+================================================================================
